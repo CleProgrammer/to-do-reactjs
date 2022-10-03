@@ -1,0 +1,82 @@
+#numtask1,
+#numtask2,
+#numtask3,
+#numtask4,
+#numtask5,
+#numtask6,
+#numtask7,
+#numtask8,
+#numtask9,
+#numtask10 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 25px;
+    height: 25px;
+}
+
+.section-tasks {
+    width: 60em;
+    height: 30em;
+    margin-top: 20px;
+}
+
+.section-tasks .task-to-do {
+    display: flex;
+    align-items: center;
+    width: 60em;
+    height: 3em;
+    background-color: rgb(37, 37, 37);
+    border-radius: 10px;
+    border: 1px solid rgb(128, 128, 128);
+    padding: 0 0 0 10px;
+}
+
+.section-tasks .task-to-do .check-task {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.check-task img {
+    width: 80%;
+}
+
+.section-tasks .task-to-do .task-name {
+    font-size: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: 608px) and (max-width: 768px) {
+    .section-tasks .task-to-do {
+        width: 45em;
+    }
+
+    .section-tasks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .section-tasks .task-to-do {
+        width: 25em;
+    }
+
+    .section-tasks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
